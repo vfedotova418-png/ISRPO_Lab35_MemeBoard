@@ -163,3 +163,11 @@ padding: 3rem;
 grid-column: 1 / -1;
 font-size: 1rem;
 }
+
+#memesCount {
+    font-family: 'Comic Sans MS', sans-serif, cursive;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    font-weight: bold;
+}

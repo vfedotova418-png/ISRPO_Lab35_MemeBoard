@@ -5,6 +5,7 @@ const inputTitle = document.getElementById("inputTitle");
 const inputCategory = document.getElementById("inputCategory");
 const inputRating = document.getElementById("inputRating");
 const btnAdd = document.getElementById("btnAdd");
+const memesCount = document.getElementById("memesCount");
 
 function renderMemes(memes) {
     loadingText.style.display = "none";
@@ -13,6 +14,7 @@ function renderMemes(memes) {
         return;
     }
     memesGrid.innerHTML = memes.map((meme) => createCardHTML(meme)).join("");
+    memesCount.textContent = "Всего мемов: " + memes.length;
 }
 
 function createCardHTML(meme) {
